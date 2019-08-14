@@ -1,0 +1,56 @@
+@import "colors.css";
+@import "master.css";
+/* //////////     HTML     ////////// */
+
+body {
+    background-color: var(--black);
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+a, a:hover {
+    color: var(--red);
+    text-decoration: none;
+}
+
+ul {
+    /* padding-right: 2vw; */
+    text-align: justify;
+    /* padding-left: 2vh; */
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+li {
+    margin-bottom: 1vh;
+}
+
+/* ////////// IDs ////////// */
+
+/* ////////// CLASSES ////////// */
+
+.caddress {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.caddress a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.cfooter {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5vh 5vh;
+}
+
+.page1 {
+    min-height: 100vh;
+    background-color: var(--text1);
+    color: var(--black);
+    padding: 0;
+}
+
+.ctext {
+    padding: 4vh 6vh;
+}

@@ -1,0 +1,264 @@
+@import "colors.css";
+@import "master.css";
+
+/* //////////     SLIDES     ////////// */
+
+#slider-md {
+    overflow: hidden;
+    margin: 0px 5vw 0vh 5vw;
+    border-radius: 2px;
+    -webkit-box-shadow: 6px 4px 19px 1px var(--shadow);
+    box-shadow: 6px 4px 19px 1px var(--shadow);
+}
+
+#slider-md figure {
+    width: 100%;
+    margin: 0;
+}
+
+#slider-md figure img {
+    width: 100%;
+}
+
+#slider {
+    overflow: hidden;
+    margin: 0px 5vw 0vh 5vw;
+    border-radius: 8px;
+    -webkit-box-shadow: 6px 4px 19px 1px var(--shadow);
+    box-shadow: 6px 4px 19px 1px var(--shadow);
+}
+
+#slider figure {
+    position: relative;
+    width: 600%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img {
+    width: 16.66666%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    15% {
+        left: 0;
+    }
+    20% {
+        left: -100%;
+    }
+    35% {
+        left: -100%;
+    }
+    40% {
+        left: -200%;
+    }
+    55% {
+        left: -200%;
+    }
+    60% {
+        left: -300%;
+    }
+    75% {
+        left: -300%;
+    }
+    80% {
+        left: -400%;
+    }
+    95% {
+        left: -400%;
+    }
+    100% {
+        left: -500%;
+    }
+}
+
+/* //////////     HTML     ////////// */
+
+body {
+    text-align: center;
+    background-color: var(--body);
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 2vh 0 0 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0;
+}
+
+h3 {
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+ol {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    padding: 0 0 0 20px;
+}
+
+/* //////////     IDs     ////////// */
+
+#white {
+    color: white;
+}
+
+#credits {
+    text-align: right;
+    margin: 20px 0px 20px 0;
+    opacity: 0.75;
+}
+
+#blurb {
+    padding: 3vh;
+    background-color: white;
+    opacity: 0.8;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    margin: 3vh 5vw;
+}
+
+#bus {
+    border-radius: 0;
+}
+
+#legend {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    /* margin: 3vh 5vw; */
+    opacity: 0.8;
+    padding: 3vh;
+    text-align: left;
+    width: 75vw;
+}
+
+#slider {
+    overflow: hidden;
+    margin: 0px 5vw 0vh 5vw;
+    border-radius: 8px;
+    -webkit-box-shadow: 6px 4px 19px 1px var(--shadow);
+    box-shadow: 6px 4px 19px 1px var(--shadow);
+}
+
+/* //////////     CLASSES     ////////// */
+
+.image-container {
+    width: 75vw;
+    overflow: hidden;
+    margin: 5vh 0;
+    /* border-radius: 8px; */
+    border-radius: 2px;
+}
+
+.image-container figure {
+    width: 100%;
+    margin: 5vh 0;
+}
+
+.logo {
+    padding: 4vh 0;
+}
+
+.logo>img {
+    width: 120px;
+}
+
+.page1 {
+    min-height: 100vh;
+    background-image: url("../img/Acanthus_mollis_5_nbrcg_wi_1024x1024CC.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 100%;
+    overflow: hidden;
+    padding-bottom: 5vh;
+}
+
+.page2 {
+    background-color: var(--videobgd);
+}
+
+.page3 {
+    background-color: var(--highlight1);
+}
+
+.page4 {
+    color: var(--text1);
+}
+
+.sc {
+    margin: 10px 0 20px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+}
+
+.video-container {
+    width: 100vw;
+    margin: 0;
+    color: var(--formborder);
+    font-size: 1.1rem;
+}
+
+.video-container p {
+    padding: 2vh 2vh 0 2vh;
+}
+
+/* //////////     RESPONSIVE     ////////// */
+
+@media (min-width: 576px) {
+    .image-container {
+        border-radius: 4px;
+    }
+    .page1 {
+        padding-bottom: 0vh;
+    }
+    .video-container {
+        width: 85vw;
+        margin: 5vh 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .blurb-border {
+        border-width: 0 1px 0 0;
+        border-color: grey;
+        border-style: solid;
+    }
+    .video-container {
+        width: 75vw;
+        margin: 10vh 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .video-container {
+        width: 75vw;
+        margin: 10vh 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image-container {
+        border-radius: 8px;
+    }
+    .page2 {
+        min-height: 100vh;
+    }
+}

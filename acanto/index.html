@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Nunito|Open+Sans|Playfair+Display|Red+Hat+Display&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/acanto.css">
+
+    <title>Acanto</title>
+</head>
+
+<body>
+
+    <!-- SPLASH PAGE -->
+
+<div class="container-fluid page1 d-flex flex-column justify-content-between">
+    <div class="logo d-none d-md-block">
+        <img src="../img/SCLogoSQ-WHITE.png"></br>
+        <h1 id="white" class="">Acanto</h1>
+    </div>
+    <div class="logo logo-white d-md-none">
+        <img src="../img/SCLogoSQ-WHITE.png"></br>
+        <h1 id="white">Acanto</h1>
+    </div>
+
+    <div id="slider" class="mb-auto d-none d-sm-none d-md-block">
+        <figure>
+            <img src="../img/AcantoRhythm.png">
+            <img src="../img/AcantoPitch.png">
+            <img src="../img/AcantoOctave.png">
+            <img src="../img/AcantoVelocity.png">
+            <img src="../img/AcantoBus.png">
+            <img src="../img/AcantoRhythm.png">
+        </figure>
+    </div>
+
+    <div id="slider-md" class="d-md-none">
+        <figure>
+            <img src="../img/AcantoBus.png">
+        </figure>
+    </div>
+
+    <div id="blurb" class="row mb-auto">
+        <div class="col-12 col-md-4 pr-4 blurb-border">
+            <p>Acanto was inspired by analog sequencers, but because it’s a <strong>Max for Live</strong> device, it offers a couple of hopefully new and alternative features...</p>
+        </div>
+        <div class="col-12 col-md-8 pl-4">
+            <ul>
+                <li>Its transport system can be completely independent from Live’s transport (of course, if you want your
+                    sequences
+                    to be
+                    quantized to a bar or beat, or an eight note, you can do so as well).</li>
+                <li>Each step can have its own rhythmic value.</li>
+                <li>Each step can also be routed to an independent output, via an <strong>Acanto bus device</strong>.</li>
+                <li>The velocity section offers independent control of accented vs. non-accented notes.</li>
+                <li>And in general, there are some handy buttons available to randomize, shift and otherwise mangle your
+                    sequences at will – all within a rather simple and straight-forward design.</li>
+            </ul>
+            <p>Please keep scrolling if you’d like to learn more...</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- VIDEO -->
+
+<div class="container-fluid page2 d-flex flex-column justify-content-center align-items-center">
+    <div class="video-container">
+        <p>
+            The following is a companion video to the demo session that comes with the downloaded zip file –– it will
+            give you a general overview of Acanto's features:
+        </p>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FLN567V4mZU" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- INTRO -->
+
+<div id="" class="container-fluid page3 d-flex flex-column justify-content-start align-items-center p-5">
+    <h1 style="text-decoration: underline;">Guided Tour</h1>
+    <div class="image-container">
+        <img class="img-fluid" src="../img/AcantoMainPanel.png" alt="">
+    </div>
+    <div id="legend">
+        <ol id="">
+            <li><strong>The Acanto Logo Button</strong>: allows you to change the color of your device, in case have multiple
+                intances in your Live session.</li>
+            <li><strong>The Transport Tab</strong>: Here you can start/stop your sequence; change the start quantization
+                settings (free, 8n, 4n, bar); and choose the number of steps for youe sequence.</li>
+            <li><strong>The Preset Tab</strong>: You can store up to 6 presets with each device</li>
+            <li><strong>The Sequencer Panel Chooser</strong>: There are 5 basic panels in Acanto (each will be described further
+                down):</li>
+            - Rhythm</br>
+            - Pitch</br>
+            - Octave</br>
+            - Velocity</br>
+            - Bus</br>
+            <li><strong>The Acanto 'Macro' Controls</strong>: Here you can manipulate each element of your sequence in a number of ways (you can shift left or right, up or down, normalize, etc., depending on the element you're working with)</li>
+            <li><strong>The Sequencer Panel</strong>: This is Acanto's main panel, where you can adjust individual parameters for each step of your sequence.</li>
+        </ol>
+    </div>
+    <h2 class="pt-5"></h2>
+</div>
+
+    <!-- CONTENT -->
+
+<div class="container-fluid page4 d-flex flex-column justify-content-start align-items-center p-5">
+   
+    <!-- RHYTHM PANEL -->
+
+    <h2 style="text-decoration: underline;">The Rhythm Panel</h2>
+    <div class="image-container">
+        <img class="img-fluid" src="../img/AcantoRhythm2.png" alt="">
+    </div>
+    <ul class="pb-5">
+        <h3>Each step can have its own rhythm</h3>
+        <h3>Note durations can be scaled independently</h3>
+    </ul>
+
+    <!-- PITCH PANEL -->
+
+    <h2 style="text-decoration: underline;">The Pitch Panel</h2>
+    <div class="image-container">
+        <img class="img-fluid" src="../img/AcantoPitch2.png" alt="">
+    </div>
+    <ul class="pb-5">
+        <h3>Notes are easy to access</h3>
+    </ul>
+
+    <!-- OCTAVE PANEL -->
+    
+    <h2 style="text-decoration: underline;">The Octave Panel</h2>
+    <div class="image-container">
+        <img class="img-fluid" src="../img/AcantoOctave2.png" alt="">
+    </div>
+    <ul class="pb-5">
+        <h3>You have a range of 6 octaves to play with</h3>
+    </ul>
+
+    <!-- VELOCITY PANEL -->
+    
+    <h2 style="text-decoration: underline;">The Velocity Panel</h2>
+    <div class="image-container">
+        <img class="img-fluid" src="../img/AcantoVelocity2.png" alt="">
+    </div>
+    <ul class="pb-5">
+        <h3>Independent control of accented vs. non-accented notes</h3>
+        <h3>Velocities can be scaled proportionately</h3>
+        <h3>They can be scaled via MIDI as well</h3>
+    </ul>
+
+    <!-- BUS PANEL -->
+    
+    <h2 style="text-decoration: underline;">The Bus Panel</h2>
+    <div class="image-container">
+        <img class="img-fluid" src="../img/AcantoBus2.png" alt="">
+    </div>
+    <ul class="pb-5">
+        <h3>Each step can be routed to a different instrument via the <span style="color: lightblue;">Acanto Bus Device</span></h3>
+        <h3>You can create intricate loops by chaining various presets together</h3>
+    </ul>
+
+    <!-- ACANTO BUSSES -->
+    
+    <h2 style="text-decoration: underline;">The Acanto Bus Devices</h2>
+    <div id="bus" class="image-container pb-5">
+        <img class="img-fluid" src="../img/AcantoBusses.png" alt="">
+    </div>
+</div>
+
+    <!-- FOOTER -->
+
+    <div class="container-fluid footer d-flex flex-column justify-content-start align-items-around">
+        <div id="" class="row">
+            <div class="col-12 col-md-6 text-left text-md-right order-1 order-md-1">
+                <div class="copyright">© 2019 - Silent Colors</div>
+                <div class="address">11bis rue du Mont-Dore</br>75017, Paris</div>
+            </div>
+            <div class="col-12 d-inline d-md-none p-2 order-2"></div>
+            <div class="col-12 col-md-6 text-left address order-3 order-md-3">
+                <a href="../index.html">Silent Colors</a></br>
+                <a href="../contact.html">Contact</a></br>
+                <a href="../disclaimer.html">System Requirements & License Agreement</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- END -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+</html>

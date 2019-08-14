@@ -1,0 +1,31 @@
+@import "colors.css";
+/* 
+font-family: 'Red Hat Display', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'DM Serif Display', serif; 
+*/
+
+.address {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.address a {
+    color: var(--footertext);
+    text-decoration: underline;
+}
+
+.copyright {
+    font-family: 'Playfair Display', serif;
+}
+
+.divider {
+    border-bottom: 1px solid var(--formborder);
+}
+
+.footer {
+    background-color: var(--footerbgd);
+    color: var(--black);
+    padding: 10vh 5vh;
+}

@@ -1,0 +1,64 @@
+@import "colors.css";
+@import "master.css";
+
+/* //////////     HTML     ////////// */
+
+body {
+    background-color: var(--black);
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+a, a:hover {
+    color: var(--home);
+    text-decoration: none;
+}
+
+ul {
+    /* padding-right: 2vw; */
+    text-align: justify;
+    padding-left: 2vh;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+li {
+    margin-bottom: 1vh;
+}
+
+/* ////////// IDs ////////// */
+
+#srla {
+    padding: 0;
+}
+
+/* ////////// CLASSES ////////// */
+
+.sr {
+    /* padding-right: 2vw; */
+}
+
+.sraddress {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sraddress a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.srcontainer {
+    min-height: 100vh;
+    padding: 0;
+    background-color: var(--white);
+}
+
+.srfooter {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2vh 5vh;
+}
+
+.srtext {
+    padding: 4vh 6vh;
+}

@@ -1,0 +1,149 @@
+@import "colors.css";
+@import "master.css";
+
+/* //////////     HTML     ////////// */
+
+body {
+    text-align: center;
+    background-color: var(--pale);
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 2vh 0 0 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0;
+    /* text-decoration: underline; */
+}
+
+h3 {
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+ol {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    padding: 0 0 0 20px;
+}
+
+/* //////////     IDs     ////////// */
+
+/* //////////     CLASSES     ////////// */
+
+.blurb {
+    padding: 3vh;
+    background-color: var(--formborder);
+    color: var(--black);
+    opacity: 0.8;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    margin: 0 0 3vh 0;
+}
+
+.blurb a, .blurb a:hover {
+    text-decoration: none;
+    color: var(--live);
+}
+
+.footer {
+    background-color: var(--footerbgd);
+    color: black;
+}
+
+.image-container {
+    margin: 3vh 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    padding: 4vh 0;
+}
+
+.logo>img {
+    width: 120px;
+}
+
+.page1 {
+    /* min-height: 100vh; */
+    background-color: var(--pale);
+}
+
+.page2 {
+    background-color: var(--pale);
+    padding-bottom: 8vh;
+}
+
+.page3 {
+    background-color: var(--videobgd);
+}
+
+.page4 {
+    min-height: 100vh;
+    background-color: var(--pale);
+}
+
+.page5 {
+    min-height: 100vh;
+    background-color: var(--videobgd);
+    color: var(--text1);
+}
+
+.page6 {
+    min-height: 100vh;
+    background-color: var(--pale);
+}
+
+.video-container {
+    width: 100vw;
+    margin: 0;
+}
+
+/* //////////     RESPONSIVE     ////////// */
+
+@media (min-width: 576px) {
+    /* .video-container {
+        width: 95vw;
+        margin: 5vh 0;
+    } */
+}
+
+@media (min-width: 768px) {
+    /* .video-container {
+        width: 95vw;
+        margin: 10vh 0;
+    } */
+}
+
+@media (min-width: 992px) {
+    .page1 {
+    min-height: 100vh;
+    }
+    .video-container {
+        width: 75vw;
+        margin: 10vh 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page3 {
+        min-height: 100vh;
+    }
+}

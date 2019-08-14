@@ -14,12 +14,18 @@ h1 {
     font-weight: 100;
 }
 
+h3 {
+    font-size: 1.2rem;
+    font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+    font-weight: 100;
+}
+
 button {
     background-color: var(--contact);
     color: var(--buttoncolor);
     border: none;
     width: 200px;
-    padding: 20px;
+    padding: 15px;
 }
 
 input, #message {
@@ -27,6 +33,7 @@ input, #message {
     border: 1px solid var(--formborder);
     display: block;
     padding: 10px;
+    border-radius: 3px;
 }
 
 input:focus, #message:focus {
@@ -36,13 +43,12 @@ input:focus, #message:focus {
 
 label {
     display: block;
-    margin: 20px;
 }
 
 /* //////////        IDs        //////////// */
 
 #message {
-    height: 35vh;
+    height: 15vh;
 }
 
 /* //////////        NAVIGATION        //////////// */
@@ -59,7 +65,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 10px 0;
-    ;
     overflow: hidden;
     background-color: var(--contact);
 }
@@ -75,7 +80,6 @@ li a {
     text-align: right;
     padding: 0px 16px;
     text-decoration: none;
-    /* text-align: center; */
 }
 
 li a:hover {
@@ -94,10 +98,6 @@ li a:hover {
 
 /* //////////        CLASSES        //////////// */
 
-.blurb {
-    align-self: center;
-}
-
 .credit {
     position: absolute;
     z-index: 5;
@@ -107,29 +107,80 @@ li a:hover {
     opacity: 0.65;
 }
 
-.scform {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 20px;
-    /* border: 1px solid rgb(158, 158, 158); */
+/* //////////        CLASSES        //////////// */
+
+.formtitle {
+    width: 600px;
+    margin-bottom: 2vh;
 }
 
 .leftc {
     min-height: 100vh;
     align-content: center;
-    /* justify-content: center; */
-    color: white;
+    color: var(--white);
     background: url(../img/megan-clark-ZsbVBilAN6Q-unsplash.jpg) var(--contact);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 0%;
 }
 
-.rightc {
-    min-height: 100vh;
-    /* align-content: center; */
+.recaptcha {
+    /* height: 10vh; */
+    margin-bottom: 20px;
+    /* border: 2px solid green; */
+}
+
+.righttop {
+    background-color: var(--contact);
+    min-height: 50vh;
+    padding: 0 0 5vh 15%;
+    box-sizing: border-box;
+}
+
+.rightbottom {
+    padding: 5vh 0 0 15%;
+    box-sizing: border-box;
+}
+
+.scform {
+    width: 80%;
+    padding: 0px;
+}
+
+.subscribe {
+    margin-bottom: 2vh;
+    color: var(--white);
+}
+
+.subscribe a {
+    border: none;
+    padding: 15px;
+    margin: 10vh 0;
+}
+
+#subscribe {
+    background-color: var(--red);
+    color: var(--buttoncolor);
 }
 
 .spacer {
     margin-top: 20px;
+}
+
+/* //////////     RESPONSIVE     ////////// */
+
+@media (min-width: 576px) {
+    /* .righttop {
+        min-height: 33vh;
+    } */
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+    .righttop {
+        min-height: 33vh;
+    }
 }

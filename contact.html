@@ -39,7 +39,7 @@
                     </p>
                 </div>
                 <div class="col-12 credit">
-                    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
+                    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
                         href="https://unsplash.com/@megvclark?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
                         target="_blank" rel="noopener noreferrer"
                         title="Download free do whatever you want high-resolution photos from Megan clark"><span
@@ -56,15 +56,31 @@
 <!-- CONTACT FORM -->
 
         <div class="col-sm-12 col-xl-6 order-2 order-md-2">
-            <div class="row rightc p-4">
-                <div class="col-12 blurb">
-                    <form class="scform" name="contact" action="POST" method="POST" data-netlify="true">
-                        <input type="text" name="name" id="name" placeholder="Name" /></br>
-                        <input type="email" name="email" id="email" placeholder="Email" /></br>
-                        <textarea name="message" id="message" placeholder="Message"></textarea></br>
-                        <div data-netlify-recaptcha="true" style="margin-bottom: 20px;"></div>
-                        <button type="submit" id="send">Send</button></br>
-                    </form>
+            <div class="row righttop">
+                <div class="col-12 d-flex flex-column flex-wrap justify-content-end align-items-start">
+                    <div class="subscribe">
+                        <h3>Subscribe to my newsletter</h3>
+                     </div>
+                     <div class="">
+                        <button id="subscribe" onclick="location.href='https://mailchi.mp/35903c84240e/silentcolors'" type="button">Subscribe</button>
+                     </div>
+                </div>
+            </div>
+            
+            <div class="row rightbottom">
+                <div class="col-12 d-flex flex-column justify-content-start align-items-start">
+                    <div class="formtitle">
+                        <h3>Send me a message</h3>
+                    </div>
+                    <div class="col-12 p-0">
+                        <form class="scform" name="contact" action="POST" method="POST" data-netlify="true">
+                            <input type="text" name="name" id="name" placeholder="Name" /></br>
+                            <input type="email" name="email" id="email" placeholder="Email" /></br>
+                            <textarea name="message" id="message" placeholder="Message"></textarea></br>
+                            <div class="recaptcha" data-netlify-recaptcha="true"></div>
+                            <button type="submit" id="send">Send</button></br>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

@@ -7,6 +7,28 @@ font-family: 'Playfair Display', serif;
 font-family: 'DM Serif Display', serif; 
 */
 
+/* ////////// GLOBAL ////////// */
+
+::-webkit-input-placeholder {
+    color: var(--placeholder);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+}
+
+::-moz-placeholder {
+    color: var(--placeholder);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+}
+
+::-ms-input-placeholder {
+    color: var(--placeholder);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.1rem;
+}
+
+/* ////////// CLASSES ////////// */
+
 .address {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -28,4 +50,9 @@ font-family: 'DM Serif Display', serif;
     background-color: var(--footerbgd);
     color: var(--black);
     padding: 10vh 5vh;
+}
+
+.scshadow {
+    -webkit-box-shadow: 6px 4px 19px 1px var(--shadow);
+    box-shadow: 6px 4px 19px 1px var(--shadow);
 }

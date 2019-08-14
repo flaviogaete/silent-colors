@@ -1,6 +1,5 @@
 @import "colors.css";
 @import "master.css";
-
 /* //////////     SLIDES     ////////// */
 
 #slider-md {
@@ -159,6 +158,52 @@ ul {
 }
 
 /* //////////     CLASSES     ////////// */
+
+.anav {
+    position: fixed;
+    z-index: 5;
+    top: 4vh;
+    right: 0;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 0.5vh 1vh;
+    /* border-radius: 8px 0 0 8px; */
+}
+
+.anav ul {
+    list-style-type: none;
+    margin: 0;
+    /* padding: 10vh; */
+    overflow: hidden;
+    background-color: var(--home);
+    padding: 0 0 0 0;
+}
+
+.anav li {
+    margin: 2vh 0;
+}
+
+.anav li a {
+    display: block;
+    color: var(--buttoncolor);
+    text-align: left;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+.anav li a:hover {
+    text-decoration: none;
+    color: var(--buttoncolor);
+}
+
+.anav a, .anav a:hover {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.anav li:last-child {
+    margin-bottom: none
+}
 
 .image-container {
     width: 75vw;

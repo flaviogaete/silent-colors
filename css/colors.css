@@ -1,3 +1,5 @@
+/* Green: #079b25  */
+
 @import "master.css";
 * {
     --black: black;
@@ -15,10 +17,11 @@
     --live: #6DD6FF;
     --red: red;
     --pale: lightyellow;
+    --placeholder: #dddddd;
     --shadow: rgba(0, 0, 0, 0.9);
     --shadow2: rgba(0, 0, 0, 0.65);
     /* --text1: rgb(160, 160, 160); */
-    --text1: rgb(221, 221, 221);
+    --text1: #dddddd;
     --videobgd: rgb(67, 73, 77);
     --white: white;
 }

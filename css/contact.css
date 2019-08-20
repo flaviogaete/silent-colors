@@ -1,11 +1,11 @@
 @import "colors.css";
 @import "master.css";
-
 /* //////////////     HTML STUFF /////////// */
 
 body {
     font-size: 1.2rem;
     font-family: 'Nunito', sans-serif;
+    /* padding: 0; */
 }
 
 h1 {
@@ -24,8 +24,13 @@ button {
     background-color: var(--contact);
     color: var(--buttoncolor);
     border: none;
-    width: 200px;
-    padding: 15px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+button:focus {
+    outline: none;
 }
 
 input, #message {
@@ -48,7 +53,7 @@ label {
 /* //////////        IDs        //////////// */
 
 #message {
-    height: 15vh;
+    height: 10vh;
 }
 
 /* //////////        NAVIGATION        //////////// */
@@ -56,44 +61,34 @@ label {
 .fnav {
     position: fixed;
     z-index: 5;
-    top: 10px;
-    right: 10px;
-    color: var(--buttoncolor);
+    top: 4vh;
+    right: 0;
+    background-color: var(--home);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 6px 0 0 6px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px 0;
-    overflow: hidden;
-    background-color: var(--contact);
-}
-
-li {
-    float: left;
-    margin: 0;
-}
-
-li a {
+.fnav a {
     display: block;
     color: var(--buttoncolor);
-    text-align: right;
+    text-align: left;
     padding: 0px 16px;
     text-decoration: none;
+    font-size: 1.1rem;
 }
 
-li a:hover {
+.fnav a, .fnav f:hover {
     text-decoration: none;
-    color: var(--buttoncolor);
+    color: var(--white);
 }
 
-.fnav li {
-    border-right: 1px solid var(--buttoncolor);
-    ;
+.fnav div {
+    margin: 10px 0 0 0;
 }
 
-.fnav li:last-child {
-    border-right: none
+.fnav div:last-child {
+    margin: 10px 0 10px 0;
 }
 
 /* //////////        CLASSES        //////////// */
@@ -118,38 +113,54 @@ li a:hover {
     min-height: 100vh;
     align-content: center;
     color: var(--white);
-    background: url(../img/megan-clark-ZsbVBilAN6Q-unsplash.jpg) var(--contact);
+    background: url('../img/IMG_20190817_132250502.jpg') var(--contact);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0% 0%;
 }
 
+.maincontainer {
+    min-width: 350px;
+}
+
+.panelright {
+    min-height: 100vh;
+}
+
 .recaptcha {
-    /* height: 10vh; */
     margin-bottom: 20px;
-    /* border: 2px solid green; */
 }
 
 .righttop {
-    background-color: var(--contact);
     min-height: 50vh;
-    padding: 0 0 5vh 15%;
-    box-sizing: border-box;
+    padding: 0 0 0 6vh;
+}
+
+.righttop img {
+    width: 150px;
+    padding-top: 100px;
 }
 
 .rightbottom {
-    padding: 5vh 0 0 15%;
-    box-sizing: border-box;
+    padding: 0 0 0 6vh;
+    min-height: 50vh;
+    overflow: hidden;
+}
+
+.sbutton {
+    width: 85%;
 }
 
 .scform {
-    width: 80%;
+    width: 85%;
     padding: 0px;
 }
 
 .subscribe {
     margin-bottom: 2vh;
     color: var(--white);
+    /* text-align: center; */
+    width: 85%;
 }
 
 .subscribe a {
@@ -161,6 +172,7 @@ li a:hover {
 #subscribe {
     background-color: var(--red);
     color: var(--buttoncolor);
+    /* width: 100%; */
 }
 
 .spacer {
@@ -170,8 +182,11 @@ li a:hover {
 /* //////////     RESPONSIVE     ////////// */
 
 @media (min-width: 576px) {
-    /* .righttop {
-        min-height: 33vh;
+    .sbutton, button {
+        width: 200px;
+    }
+    /* form button {
+        width: 50%;
     } */
 }
 
@@ -182,5 +197,6 @@ li a:hover {
 @media (min-width: 1200px) {
     .righttop {
         min-height: 33vh;
+        background-image: none;
     }
 }

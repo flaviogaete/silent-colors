@@ -7,7 +7,7 @@ font-family: 'Playfair Display', serif;
 font-family: 'DM Serif Display', serif; 
 */
 
-/* ////////// GLOBAL ////////// */
+/* ////////// PLACEHOLDERS ////////// */
 
 ::-webkit-input-placeholder {
     color: var(--placeholder);
@@ -26,6 +26,10 @@ font-family: 'DM Serif Display', serif;
     font-family: 'Nunito', sans-serif;
     font-size: 1.1rem;
 }
+
+/* ////////// HTML ////////// */
+
+
 
 /* ////////// CLASSES ////////// */
 

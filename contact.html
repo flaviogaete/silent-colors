@@ -18,19 +18,20 @@
 </head>
 
 <body>
-<div class="fnav">
-    <ul class="">
-        <li class=""><a class="" href="acanto/index.html">Products</a></li>
-        <li class=""><a class="" href="courses.html">Courses</a></li>
-        <li class=""><a class="" href="index.html">Home</a></li>
-    </ul>
-</div>
-<div class="container-fluid">
+    <div class="fnav shadow d-flex flex-column justify-content-center align-items-end">
+        <div><a class="" href="acanto/index.html">Instruments</a></div>
+        <div><a class="" href="courses.html">Courses</a></div>
+        <div><a class="" href="index.html">Home</a></div>
+    </div>
+
+<div class="container-fluid m-0 p-0 maincontainer">
 
 <!-- PHOTO & LOGO -->
 
-    <div class="row d-flex flex-row">
-        <div class="col-sm-12 col-xl-6 order-1 order-md-1">
+<!-- d-none d-xl-inline -->
+
+    <div class="row d-flex flex-row m-0 p-0">
+        <div class="col-sm-12 col-xl-6 order-1 order-md-1 panelleft">
             <div class="row leftc">
                 <div class="col-12 text-center logo">
                     <img src="img/SCLogoSQ-WHITE.png">
@@ -38,42 +39,37 @@
                         <h1>Silent Colors</h1>
                     </p>
                 </div>
-                <div class="col-12 credit">
-                    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px"
-                        href="https://unsplash.com/@megvclark?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-                        target="_blank" rel="noopener noreferrer"
-                        title="Download free do whatever you want high-resolution photos from Megan clark"><span
-                            style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
-                                style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
-                                viewBox="0 0 32 32">
-                                <title>unsplash-logo</title>
-                                <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-                            </svg></span><span style="display:inline-block;padding:2px 3px">Megan clark</span></a>
-                </div>
             </div>
         </div>
 
 <!-- CONTACT FORM -->
 
-        <div class="col-sm-12 col-xl-6 order-2 order-md-2">
-            <div class="row righttop">
+        <div class="col-sm-12 col-xl-6 order-2 order-md-2 panelright m-0 p-0">
+            <div class="row righttop m-0">
                 <div class="col-12 d-flex flex-column flex-wrap justify-content-end align-items-start">
-                    <div class="subscribe">
+                    <div class="text-center logo d-xl-none align-self-center mr-5 mr-sm-0">
+                        <img src="img/SCLogoSQ-WHITE.png">
+                        <p class="spacer">
+                            <h1 class="text-white">Silent Colors</h1>
+                        </p>
+                    </div>
+                    <div class="my-3">
                         <h3>Subscribe to my newsletter</h3>
-                     </div>
-                     <div class="">
-                        <button id="subscribe" onclick="location.href='https://mailchi.mp/35903c84240e/silentcolors'" type="button">Subscribe</button>
-                     </div>
+                    </div>
+                    <div class="pb-5 sbutton">
+                        <button id="subscribe" class="" onclick=" window.open('https://mailchi.mp/35903c84240e/silentcolors','_blank')">
+                            Subscribe</button>
+                    </div>
                 </div>
             </div>
             
-            <div class="row rightbottom">
+            <div class="row rightbottom m-0">
                 <div class="col-12 d-flex flex-column justify-content-start align-items-start">
-                    <div class="formtitle">
+                    <div class="formtitle pt-5">
                         <h3>Send me a message</h3>
                     </div>
-                    <div class="col-12 p-0">
-                        <form class="scform" name="contact" action="POST" method="POST" data-netlify="true">
+                    <div class="col-12 p-0 m-0">
+                        <form class="scform pb-5" name="contact" action="POST" method="POST" data-netlify="true">
                             <input type="text" name="name" id="name" placeholder="Name" /></br>
                             <input type="email" name="email" id="email" placeholder="Email" /></br>
                             <textarea name="message" id="message" placeholder="Message"></textarea></br>

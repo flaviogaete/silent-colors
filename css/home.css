@@ -2,6 +2,14 @@
 @import "master.css";
 /* //////////        HTML STUFF        //////////// */
 
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+  /* text-decoration: underline; */
+  color: var(--red);
+  font-family: 'Nunito', sans-serif;
+  /* font-weight: 600; */
+}
+
 body {
   font-size: 1.2rem;
   font-family: 'Nunito', sans-serif;
@@ -14,11 +22,6 @@ h1 {
   font-weight: 100;
 }
 
-a, a:hover, a:visited, a:active {
-  color: var(--home);
-  text-decoration: none
-}
-
 #sig {
   text-align: right;
 }
@@ -28,46 +31,34 @@ a, a:hover, a:visited, a:active {
 .fnav {
   position: fixed;
   z-index: 5;
-  top: 10px;
-  right: 10px;
-  color: white;
-  /* -webkit-box-shadow: -2px 4px 12px 1px var(--shadow2);
-  box-shadow: -2px 4px 12px 1px var(--shadow2); */
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 10px 0;
-  ;
-  overflow: hidden;
+  top: 4vh;
+  right: 0;
   background-color: var(--home);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 6px 0 0 6px;
 }
 
-li {
-  float: left;
-  margin: 0;
-}
-
-li a, li a:hover, li a:visited, li a:active {
+.fnav a {
   display: block;
-  color: white;
-  text-align: right;
+  color: var(--buttoncolor);
+  text-align: left;
   padding: 0px 16px;
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
-li a:hover {
+.fnav a, .fnav f:hover {
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
-.fnav li {
-  border-right: 1px solid #ffffff;
+.fnav div {
+  margin: 10px 0 0 0;
 }
 
-.fnav li:last-child {
-  border-right: none
+.fnav div:last-child {
+  margin: 10px 0 10px 0;
 }
 
 /* //////////        CONTENT        //////////// */
@@ -78,18 +69,38 @@ li a:hover {
 }
 
 .left {
+  min-width: 340px;
+  /* min-height: 45vh; */
   min-height: 100vh;
   align-content: center;
   justify-content: center;
   background-color: var(--home);
-  color: white;
+  /* background-image: url('../img/IMG_20190817_130409843.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: 100% 100%; */
 }
 
 .right {
+  min-width: 320px;
+  /* min-height: 50vh; */
   min-height: 100vh;
-  /* align-content: center; */
 }
 
 .spacer {
   margin-top: 20px;
+}
+
+/* //////////     RESPONSIVE     ////////// */
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+  .left, .right {
+    min-height: 100vh;
+  }
 }

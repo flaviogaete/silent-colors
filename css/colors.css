@@ -5,7 +5,8 @@
     --black: black;
     --body: black;
     --buttoncolor: rgb(255, 255, 255);
-    --contact: #02d8cd;
+    /* --contact: #02d8cd; */
+    --contact: #061526;
     --formborder: rgb(160, 160, 160);
     --footerbgd: #b3edff;
     /* --footertext: navy; */
@@ -13,7 +14,9 @@
     --grey: grey;
     --highlight1: #fc7038;
     /* --highlight1: #f39219; */
-    --home: rgb(255, 0, 0);
+    /* --home: rgb(255, 0, 0); */
+    /* --home: rgb(255, 200, 0); */
+    --home: #061526;
     --live: #6DD6FF;
     --red: red;
     --pale: lightyellow;

@@ -1,0 +1,24 @@
+@import "colors.css";
+@import "master.css";
+
+/* //////////     HTML     ////////// */
+
+/* body {
+    background-color: var(--black);
+    text-align: justify;
+    font-size: 1.1rem;
+} */
+
+a, a:hover {
+    color: var(--red);
+    text-decoration: none;
+}
+
+
+/* ////////// IDs ////////// */
+
+/* ////////// CLASSES ////////// */
+
+.mycontainer {
+    min-height: 100vh;
+}

@@ -80,7 +80,7 @@
 
 body {
     text-align: center;
-    background-color: var(--body);
+    background-color: var(--white);
 }
 
 h1 {
@@ -198,7 +198,6 @@ ul {
     width: 75vw;
     overflow: hidden;
     margin: 5vh 0;
-    /* border-radius: 8px; */
     border-radius: 2px;
 }
 
@@ -217,12 +216,12 @@ ul {
 
 .page1 {
     min-height: 100vh;
-    background-image: url("../img/Acanthus_mollis_5_nbrcg_wi_1024x1024CC.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0% 100%;
-    overflow: hidden;
-    padding-bottom: 5vh;
+    /* background-image: url("../img/acantoTN.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: 0% 100%; */
+    /* overflow: hidden; */
+    /* padding-bottom: 5vh; */
 }
 
 .page2 {

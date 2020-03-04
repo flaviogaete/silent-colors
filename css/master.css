@@ -21,8 +21,6 @@
 
 /* ////////// HTML ////////// */
 
-
-
 /* ////////// CLASSES ////////// */
 
 .address {
@@ -48,7 +46,7 @@
     padding: 10vh 5vh;
 }
 
-.footer a {
+.footer a, .footer a:hover {
     color: white;
     text-decoration: none;
 }

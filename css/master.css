@@ -1,12 +1,4 @@
 
-/* 
-font-family: 'Red Hat Display', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Nunito', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'DM Serif Display', serif; 
-*/
-
 /* ////////// PLACEHOLDERS ////////// */
 
 ::-webkit-input-placeholder {
@@ -51,9 +43,14 @@ font-family: 'DM Serif Display', serif;
 }
 
 .footer {
-    background-color: var(--footerbgd);
-    color: var(--black);
+    background-color: var(--black);
+    color: var(--white);
     padding: 10vh 5vh;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
 }
 
 .scshadow {

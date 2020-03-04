@@ -1,81 +1,5 @@
 @import "colors.css";
 @import "master.css";
-/* //////////     SLIDES     ////////// */
-
-#slider-md {
-    overflow: hidden;
-    margin: 0px 5vw 0vh 5vw;
-    border-radius: 2px;
-    -webkit-box-shadow: 6px 4px 19px 1px var(--shadow);
-    box-shadow: 6px 4px 19px 1px var(--shadow);
-}
-
-#slider-md figure {
-    width: 100%;
-    margin: 0;
-}
-
-#slider-md figure img {
-    width: 100%;
-}
-
-#slider {
-    overflow: hidden;
-    margin: 0px 5vw 0vh 5vw;
-    border-radius: 8px;
-    -webkit-box-shadow: 6px 4px 19px 1px var(--shadow);
-    box-shadow: 6px 4px 19px 1px var(--shadow);
-}
-
-#slider figure {
-    position: relative;
-    width: 600%;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
-}
-
-#slider figure img {
-    width: 16.66666%;
-    float: left;
-}
-
-@keyframes slider {
-    0% {
-        left: 0;
-    }
-    15% {
-        left: 0;
-    }
-    20% {
-        left: -100%;
-    }
-    35% {
-        left: -100%;
-    }
-    40% {
-        left: -200%;
-    }
-    55% {
-        left: -200%;
-    }
-    60% {
-        left: -300%;
-    }
-    75% {
-        left: -300%;
-    }
-    80% {
-        left: -400%;
-    }
-    95% {
-        left: -400%;
-    }
-    100% {
-        left: -500%;
-    }
-}
-
 /* //////////     HTML     ////////// */
 
 body {
@@ -100,9 +24,10 @@ h2 {
 }
 
 h3 {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 100;
+    margin: 40px 0 40px 0;
 }
 
 ol {
@@ -111,49 +36,7 @@ ol {
 
 ul {
     padding: 0 0 0 20px;
-}
-
-/* //////////     IDs     ////////// */
-
-#white {
-    color: white;
-}
-
-#credits {
-    text-align: right;
-    margin: 20px 0px 20px 0;
-    opacity: 0.75;
-}
-
-#blurb {
-    padding: 3vh;
-    background-color: white;
-    opacity: 0.8;
     text-align: left;
-    font-family: 'Nunito', sans-serif;
-    margin: 3vh 5vw;
-}
-
-#bus {
-    border-radius: 0;
-}
-
-#legend {
-    background-color: white;
-    font-family: 'Courier New', Courier, monospace;
-    /* margin: 3vh 5vw; */
-    opacity: 0.8;
-    padding: 3vh;
-    text-align: left;
-    width: 75vw;
-}
-
-#slider {
-    overflow: hidden;
-    margin: 0px 5vw 0vh 5vw;
-    border-radius: 8px;
-    -webkit-box-shadow: 6px 4px 19px 1px var(--shadow);
-    box-shadow: 6px 4px 19px 1px var(--shadow);
 }
 
 /* //////////     NAVIGATION     ////////// */
@@ -163,18 +46,17 @@ ul {
     z-index: 5;
     top: 4vh;
     right: 0;
-    background-color: var(--home);
-    color: var(--white);
     padding: 10px;
-    border-radius: 6px 0 0 6px;
-    /* -webkit-box-shadow: 6px 4px 19px 1px var(--shadow); */
-    /* box-shadow: 6px 4px 19px 1px var(--shadow); */
+    border-radius: 2px 0 0 2px;
+    background-color: var(--red);
+    color: var(--white);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .fnav a {
     display: block;
-    color: var(--buttoncolor);
-    text-align: left;
+    color: var(--white);
+    /* text-align: left; */
     padding: 0px 16px;
     text-decoration: none;
 }
@@ -194,10 +76,14 @@ ul {
 
 /* //////////     CLASSES     ////////// */
 
+.captions {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .image-container {
     width: 75vw;
     overflow: hidden;
-    margin: 5vh 0;
+    margin: 5vh 0 20px 0;
     border-radius: 2px;
 }
 
@@ -206,40 +92,12 @@ ul {
     margin: 5vh 0;
 }
 
-.logo {
-    padding: 4vh 0;
-}
-
-.logo>img {
-    width: 120px;
-}
-
 .page1 {
     min-height: 100vh;
-    /* background-image: url("../img/acantoTN.png"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    /* background-position: 0% 100%; */
-    /* overflow: hidden; */
-    /* padding-bottom: 5vh; */
 }
 
 .page2 {
-    background-color: var(--videobgd);
-}
-
-.page3 {
-    background-color: var(--highlight1);
-}
-
-.page4 {
-    color: var(--text1);
-}
-
-.sc {
-    margin: 10px 0 20px 0;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
+    min-height: 100vh;
 }
 
 .video-container {
@@ -255,12 +113,15 @@ ul {
 
 /* //////////     RESPONSIVE     ////////// */
 
-@media (min-width: 576px) {
+/* max-width: 576px 768 992 */
+
+@media (max-width: 1200px) {
     .image-container {
         border-radius: 4px;
     }
-    .page1 {
+    .page2 {
         padding-bottom: 0vh;
+        min-height: 10vh;
     }
     .video-container {
         width: 85vw;
@@ -269,11 +130,6 @@ ul {
 }
 
 @media (min-width: 768px) {
-    .blurb-border {
-        border-width: 0 1px 0 0;
-        border-color: grey;
-        border-style: solid;
-    }
     .video-container {
         width: 75vw;
         margin: 10vh 0;

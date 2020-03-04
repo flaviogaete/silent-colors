@@ -1,4 +1,5 @@
 /* Green: #079b25  */
+
 /* @import "master.css"; */
 
 * {
@@ -13,12 +14,15 @@
     --footertext: black;
     --grey: grey;
     --highlight1: #fc7038;
-    /* --highlight1: #f39219; */
-    /* --home: rgb(255, 0, 0); */
-    /* --home: rgb(255, 200, 0); */
     --home: #061526;
+    --link1: #C4DEDD;
+    --link2: #B2BDB4;
+    --link3: #9F8D78;
+    --link4: #5D6D62;
+    --link5: #B48B75;
     --live: #6DD6FF;
     --red: red;
+    --red2: #880C05;
     --pale: lightyellow;
     --placeholder: #dddddd;
     --shadow: rgba(0, 0, 0, 0.9);
@@ -27,4 +31,5 @@
     --text1: #dddddd;
     --videobgd: rgb(67, 73, 77);
     --white: white;
+    --yellow: #FCD032;
 }
